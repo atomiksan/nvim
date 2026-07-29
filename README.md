@@ -14,7 +14,8 @@ use feel ready without turning the config into a maze.
 - LSP: Neovim's native `vim.lsp` API
 - Formatting: `conform.nvim`
 - Debugging: `nvim-dap`, `nvim-dap-ui`, `rustaceanvim`, `nvim-dap-go`
-- UI/QoL: `noice.nvim`, `trouble.nvim`, `todo-comments.nvim`, `snacks.nvim`
+- UI/QoL: `noice.nvim`, `trouble.nvim`, `todo-comments.nvim`, `snacks.nvim`,
+  `mini.ai`, `mini.surround`
 - Tasks: `overseer.nvim`
 - Navigation: Harpoon, Oil, Telescope, vim-tmux-navigator
 - Treesitter: `main` branch with the current Treesitter setup
@@ -145,9 +146,17 @@ through Trouble.
 | --- | --- |
 | `;` | Enter command mode |
 | `jk` | Escape insert mode |
+| `<C-s>` | Save file |
+| `<leader>w` | Save file |
+| `<leader>q` | Quit window with confirmation |
+| `<Esc>` | Clear search highlight |
+| `[d` / `]d` | Previous / next diagnostic |
+| `<leader>cd` | Show line diagnostics |
+| `<leader>xl` | Send diagnostics to location list |
 | `<leader>ti` | Toggle LSP inlay hints |
 | `<leader>z` | Open a scratch buffer |
 | `<leader>Z` | Select a scratch buffer |
+| `gsa` / `gsd` / `gsr` | Add / delete / replace surrounding pairs |
 
 ## External Tools
 

@@ -77,4 +77,30 @@ return {
       timeout = 300,
     },
   },
+
+  {
+    "echasnovski/mini.ai",
+    event = "VeryLazy",
+    opts = function()
+      return {
+        n_lines = 500,
+      }
+    end,
+  },
+
+  {
+    "echasnovski/mini.surround",
+    event = "VeryLazy",
+    opts = {
+      mappings = {
+        add = "gsa",
+        delete = "gsd",
+        find = "gsf",
+        find_left = "gsF",
+        highlight = "gsh",
+        replace = "gsr",
+        update_n_lines = "gsn",
+      },
+    },
+  },
 }
